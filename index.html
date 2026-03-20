@@ -1,0 +1,594 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Obrigada — Workshop Os 8 Segredos para Bloquear a Autossabotagem</title>
+  <meta name="description" content="Sua inscrição foi confirmada! Acesse o grupo exclusivo no WhatsApp e prepare-se para o workshop." />
+  <meta name="robots" content="noindex, nofollow" />
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;1,400&family=Lora:ital,wght@0,400;0,600;1,400&family=Lato:wght@300;400;700&display=swap" rel="stylesheet" />
+
+  <style>
+    :root {
+      --teal: #5DCAA5;
+      --teal-dark: #3da882;
+      --teal-light: rgba(93, 202, 165, 0.12);
+      --bg-dark: #0d0d0d;
+      --bg-section: #111111;
+      --bg-card: #161616;
+      --text-primary: #f0ece4;
+      --text-secondary: #b8b0a4;
+      --text-muted: #7a746e;
+      --border: rgba(93, 202, 165, 0.15);
+    }
+
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+
+    html { scroll-behavior: smooth; }
+
+    body {
+      background-color: var(--bg-dark);
+      color: var(--text-primary);
+      font-family: 'Lato', sans-serif;
+      font-size: 16px;
+      line-height: 1.7;
+      -webkit-font-smoothing: antialiased;
+    }
+
+    /* ─── TOPO ─── */
+    .top-bar {
+      background: var(--bg-section);
+      border-bottom: 1px solid var(--border);
+      padding: 14px 24px;
+      text-align: center;
+    }
+    .top-bar span {
+      font-family: 'Lato', sans-serif;
+      font-size: 13px;
+      letter-spacing: 2px;
+      text-transform: uppercase;
+      color: var(--teal);
+    }
+
+    /* ─── HERO ─── */
+    .hero {
+      padding: 80px 24px 70px;
+      text-align: center;
+      background: radial-gradient(ellipse at 50% 0%, rgba(93,202,165,0.07) 0%, transparent 70%);
+      border-bottom: 1px solid var(--border);
+    }
+
+    .hero-eyebrow {
+      display: inline-block;
+      font-family: 'Lato', sans-serif;
+      font-size: 12px;
+      letter-spacing: 3px;
+      text-transform: uppercase;
+      color: var(--teal);
+      margin-bottom: 28px;
+    }
+
+    .hero-check {
+      width: 72px;
+      height: 72px;
+      border-radius: 50%;
+      border: 2px solid var(--teal);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin: 0 auto 32px;
+      background: var(--teal-light);
+    }
+    .hero-check svg {
+      width: 36px;
+      height: 36px;
+      stroke: var(--teal);
+      fill: none;
+      stroke-width: 2.5;
+      stroke-linecap: round;
+      stroke-linejoin: round;
+    }
+
+    .hero h1 {
+      font-family: 'Playfair Display', serif;
+      font-size: clamp(32px, 5vw, 54px);
+      font-weight: 700;
+      line-height: 1.15;
+      color: var(--text-primary);
+      margin-bottom: 20px;
+    }
+    .hero h1 em {
+      font-style: italic;
+      color: var(--teal);
+    }
+
+    .hero-subtitle {
+      font-family: 'Lora', serif;
+      font-size: clamp(16px, 2.5vw, 20px);
+      color: var(--text-secondary);
+      max-width: 600px;
+      margin: 0 auto 40px;
+      line-height: 1.7;
+    }
+
+    /* ─── SEÇÃO WHATSAPP ─── */
+    .whatsapp-section {
+      padding: 64px 24px;
+      background: var(--bg-section);
+      border-bottom: 1px solid var(--border);
+    }
+
+    .container {
+      max-width: 720px;
+      margin: 0 auto;
+    }
+
+    .section-label {
+      font-family: 'Lato', sans-serif;
+      font-size: 11px;
+      letter-spacing: 3px;
+      text-transform: uppercase;
+      color: var(--teal);
+      margin-bottom: 12px;
+    }
+
+    .section-title {
+      font-family: 'Playfair Display', serif;
+      font-size: clamp(24px, 4vw, 36px);
+      font-weight: 700;
+      line-height: 1.2;
+      color: var(--text-primary);
+      margin-bottom: 20px;
+    }
+
+    .section-text {
+      font-family: 'Lora', serif;
+      font-size: 17px;
+      color: var(--text-secondary);
+      line-height: 1.8;
+      margin-bottom: 16px;
+    }
+
+    /* Card do WhatsApp */
+    .whatsapp-card {
+      background: var(--bg-card);
+      border: 1px solid var(--border);
+      border-radius: 12px;
+      padding: 36px;
+      margin-top: 36px;
+      text-align: center;
+    }
+
+    .whatsapp-icon {
+      width: 60px;
+      height: 60px;
+      margin: 0 auto 20px;
+    }
+
+    .whatsapp-card h3 {
+      font-family: 'Playfair Display', serif;
+      font-size: 22px;
+      color: var(--text-primary);
+      margin-bottom: 12px;
+    }
+
+    .whatsapp-card p {
+      font-family: 'Lato', sans-serif;
+      font-size: 15px;
+      color: var(--text-secondary);
+      margin-bottom: 28px;
+      line-height: 1.6;
+    }
+
+    .btn-whatsapp {
+      display: inline-flex;
+      align-items: center;
+      gap: 10px;
+      background: #25D366;
+      color: #fff;
+      font-family: 'Lato', sans-serif;
+      font-size: 16px;
+      font-weight: 700;
+      letter-spacing: 0.5px;
+      text-decoration: none;
+      padding: 16px 36px;
+      border-radius: 4px;
+      transition: background 0.2s, transform 0.2s;
+    }
+    .btn-whatsapp:hover {
+      background: #1ebe5a;
+      transform: translateY(-2px);
+    }
+    .btn-whatsapp svg {
+      width: 22px;
+      height: 22px;
+      fill: #fff;
+    }
+
+    /* ─── SEÇÃO MENSAGEM ─── */
+    .message-section {
+      padding: 64px 24px;
+      background: var(--bg-dark);
+      border-bottom: 1px solid var(--border);
+    }
+
+    .message-card {
+      background: var(--bg-card);
+      border: 1px solid var(--border);
+      border-left: 3px solid var(--teal);
+      border-radius: 0 12px 12px 0;
+      padding: 40px 40px 40px 44px;
+    }
+
+    .message-card .quote-mark {
+      font-family: 'Playfair Display', serif;
+      font-size: 72px;
+      color: var(--teal);
+      line-height: 0.6;
+      margin-bottom: 20px;
+      display: block;
+      opacity: 0.5;
+    }
+
+    .message-card p {
+      font-family: 'Lora', serif;
+      font-size: 17px;
+      color: var(--text-secondary);
+      line-height: 1.85;
+      margin-bottom: 16px;
+    }
+
+    .message-card p strong {
+      color: var(--text-primary);
+      font-weight: 600;
+    }
+
+    .message-card p em {
+      color: var(--teal);
+      font-style: italic;
+    }
+
+    .message-signature {
+      margin-top: 28px;
+      padding-top: 24px;
+      border-top: 1px solid var(--border);
+      font-family: 'Lato', sans-serif;
+      font-size: 14px;
+      color: var(--text-muted);
+    }
+    .message-signature strong {
+      color: var(--text-secondary);
+    }
+
+    /* ─── SEÇÃO BÔNUS ─── */
+    .bonus-section {
+      padding: 64px 24px;
+      background: var(--bg-section);
+      border-bottom: 1px solid var(--border);
+    }
+
+    .bonus-card {
+      background: var(--bg-card);
+      border: 1px solid var(--border);
+      border-radius: 12px;
+      padding: 36px;
+      display: flex;
+      align-items: flex-start;
+      gap: 24px;
+    }
+
+    .bonus-icon {
+      flex-shrink: 0;
+      width: 52px;
+      height: 52px;
+      border-radius: 50%;
+      background: var(--teal-light);
+      border: 1px solid var(--teal);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+    .bonus-icon svg {
+      width: 26px;
+      height: 26px;
+      stroke: var(--teal);
+      fill: none;
+      stroke-width: 2;
+      stroke-linecap: round;
+      stroke-linejoin: round;
+    }
+
+    .bonus-content h3 {
+      font-family: 'Playfair Display', serif;
+      font-size: 22px;
+      color: var(--text-primary);
+      margin-bottom: 10px;
+    }
+
+    .bonus-content p {
+      font-family: 'Lato', sans-serif;
+      font-size: 15px;
+      color: var(--text-secondary);
+      line-height: 1.7;
+    }
+
+    .bonus-badge {
+      display: inline-block;
+      margin-top: 14px;
+      background: var(--teal-light);
+      border: 1px solid var(--teal);
+      color: var(--teal);
+      font-family: 'Lato', sans-serif;
+      font-size: 12px;
+      letter-spacing: 1.5px;
+      text-transform: uppercase;
+      padding: 6px 14px;
+      border-radius: 20px;
+    }
+
+    /* ─── SEÇÃO CHECKLIST ─── */
+    .checklist-section {
+      padding: 64px 24px;
+      background: var(--bg-dark);
+      border-bottom: 1px solid var(--border);
+    }
+
+    .checklist {
+      list-style: none;
+      margin-top: 32px;
+    }
+
+    .checklist li {
+      display: flex;
+      align-items: flex-start;
+      gap: 16px;
+      padding: 18px 0;
+      border-bottom: 1px solid var(--border);
+    }
+    .checklist li:last-child {
+      border-bottom: none;
+    }
+
+    .checklist-icon {
+      flex-shrink: 0;
+      width: 28px;
+      height: 28px;
+      border-radius: 50%;
+      background: var(--teal-light);
+      border: 1px solid var(--teal);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin-top: 2px;
+    }
+    .checklist-icon svg {
+      width: 14px;
+      height: 14px;
+      stroke: var(--teal);
+      fill: none;
+      stroke-width: 2.5;
+      stroke-linecap: round;
+      stroke-linejoin: round;
+    }
+
+    .checklist-text {
+      font-family: 'Lato', sans-serif;
+      font-size: 16px;
+      color: var(--text-secondary);
+      line-height: 1.6;
+    }
+    .checklist-text strong {
+      color: var(--text-primary);
+      display: block;
+      font-size: 17px;
+      margin-bottom: 4px;
+    }
+
+    /* ─── RODAPÉ ─── */
+    .footer {
+      padding: 40px 24px;
+      text-align: center;
+      background: var(--bg-section);
+      border-top: 1px solid var(--border);
+    }
+
+    .footer-logo {
+      font-family: 'Playfair Display', serif;
+      font-size: 18px;
+      color: var(--teal);
+      margin-bottom: 10px;
+    }
+
+    .footer-text {
+      font-family: 'Lato', sans-serif;
+      font-size: 13px;
+      color: var(--text-muted);
+    }
+
+    /* ─── RESPONSIVO ─── */
+    @media (max-width: 600px) {
+      .hero { padding: 56px 20px 52px; }
+      .whatsapp-section, .message-section, .bonus-section, .checklist-section { padding: 48px 20px; }
+      .whatsapp-card, .message-card { padding: 28px 24px; }
+      .bonus-card { flex-direction: column; gap: 16px; }
+      .message-card { padding: 28px 24px 28px 28px; }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- TOPO -->
+  <div class="top-bar">
+    <span>Clube da Mulher Selvagem</span>
+  </div>
+
+  <!-- HERO -->
+  <section class="hero">
+    <span class="hero-eyebrow">Inscrição confirmada</span>
+    <div class="hero-check">
+      <svg viewBox="0 0 24 24"><polyline points="20 6 9 17 4 12"/></svg>
+    </div>
+    <h1>Você disse <em>sim</em><br>para si mesma.</h1>
+    <p class="hero-subtitle">
+      Sua inscrição no workshop <strong>Os 8 Segredos para Bloquear a Autossabotagem</strong> está confirmada. Agora é hora de se preparar.
+    </p>
+  </section>
+
+  <!-- WHATSAPP -->
+  <section class="whatsapp-section">
+    <div class="container">
+      <p class="section-label">Passo 1 — Essencial</p>
+      <h2 class="section-title">Entre no grupo exclusivo<br>no WhatsApp</h2>
+      <p class="section-text">
+        É pelo grupo que você vai receber o link do Zoom antes do workshop, o seu bônus e todas as informações importantes. Não fique de fora.
+      </p>
+
+      <div class="whatsapp-card">
+        <svg class="whatsapp-icon" viewBox="0 0 48 48" xmlns="http://www.w3.org/2000/svg">
+          <circle cx="24" cy="24" r="24" fill="#25D366"/>
+          <path fill="#fff" d="M24 10.2C16.4 10.2 10.2 16.4 10.2 24c0 2.4.6 4.7 1.8 6.7L10 38l7.5-2c1.9 1 4.1 1.6 6.5 1.6 7.6 0 13.8-6.2 13.8-13.8S31.6 10.2 24 10.2zm6.8 19.4c-.3.8-1.6 1.5-2.2 1.6-.6.1-1.2.1-1.8-.1-.4-.1-1-.3-1.7-.6-3-1.3-5-4.3-5.1-4.5-.1-.2-1.1-1.5-1.1-2.8s.7-2 .9-2.3c.2-.3.5-.3.7-.3h.5c.2 0 .4 0 .5.4.2.4.7 1.7.7 1.8.1.1.1.3 0 .4-.1.1-.1.2-.2.4l-.3.3c-.1.1-.2.2-.1.4.1.2.6 1 1.3 1.6.9.8 1.7 1.1 1.9 1.2.2.1.4.1.5-.1l.7-.8c.2-.2.3-.2.5-.1l1.7.8c.2.1.3.2.4.3.1.3 0 1.2-.3 2z"/>
+        </svg>
+        <h3>Grupo Exclusivo do Workshop</h3>
+        <p>Você receberá o link do Zoom, o bônus <strong>Mapa da Autossabotagem</strong> e atualizações importantes por aqui.</p>
+        <a class="btn-whatsapp" href="https://chat.whatsapp.com/FFKj3AMDI5IHjkF4RxgE6m?mode=gi_t" target="_blank" rel="noopener">
+          <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+          Entrar no Grupo do WhatsApp
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- MENSAGEM DA PÂMELLA -->
+  <section class="message-section">
+    <div class="container">
+      <p class="section-label">Uma mensagem de Pâmella</p>
+      <h2 class="section-title">A autossabotagem<br>já começou a agir.</h2>
+
+      <div class="message-card">
+        <span class="quote-mark">"</span>
+        <p>
+          Você acabou de dar um passo importante. E é exatamente agora que o sabotador interno entra em cena.
+        </p>
+        <p>
+          <strong>Ele vai aparecer como preguiça de entrar no grupo do WhatsApp.</strong> Como uma voz que diz "eu vejo depois". Como uma agenda que de repente fica cheia no dia 11 de abril.
+        </p>
+        <p>
+          Esse é o padrão que vamos desmontar juntas no workshop. E ele começa a se revelar agora, nos pequenos gestos — ou na ausência deles.
+        </p>
+        <p>
+          <em>Entre no grupo hoje. Não amanhã.</em>
+        </p>
+        <p>
+          E se programe de verdade para o dia 11 de abril: <strong>marque na agenda, avise quem precisa ser avisado, escolha um lugar tranquilo, separe fones de ouvido, papel e caneta.</strong>
+        </p>
+        <p>
+          Esse momento merece a sua presença inteira. Não a sua presença dividida entre notificações e afazeres.
+        </p>
+        <p>
+          Te vejo lá.
+        </p>
+        <div class="message-signature">
+          Com carinho,<br>
+          <strong>Pâmella Cavallini</strong><br>
+          Mentora &amp; Terapeuta — Clube da Mulher Selvagem
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- BÔNUS -->
+  <section class="bonus-section">
+    <div class="container">
+      <p class="section-label">Seu bônus exclusivo</p>
+      <h2 class="section-title">Mapa da Autossabotagem</h2>
+      <p class="section-text">
+        Como presente por ter dito sim para si mesma, você vai receber o <strong>Mapa da Autossabotagem</strong> — uma ferramenta para identificar os padrões que mais te travam.
+      </p>
+
+      <div class="bonus-card">
+        <div class="bonus-icon">
+          <svg viewBox="0 0 24 24"><path d="M12 2L2 7l10 5 10-5-10-5z"/><polyline points="2 17 12 22 22 17"/><polyline points="2 12 12 17 22 12"/></svg>
+        </div>
+        <div class="bonus-content">
+          <h3>Mapa da Autossabotagem</h3>
+          <p>
+            Você receberá este material <strong>no dia do workshop</strong> — pelo grupo no WhatsApp e também por e-mail. Mais um motivo para entrar no grupo agora e confirmar que seu e-mail está correto.
+          </p>
+          <span class="bonus-badge">Entregue no dia 11 de abril</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CHECKLIST DE PREPARAÇÃO -->
+  <section class="checklist-section">
+    <div class="container">
+      <p class="section-label">Passo 2 — Prepare-se</p>
+      <h2 class="section-title">Como se preparar<br>para o workshop</h2>
+      <p class="section-text">
+        Esse é um espaço de transformação real. Para aproveitá-lo ao máximo, se organize com antecedência:
+      </p>
+
+      <ul class="checklist">
+        <li>
+          <div class="checklist-icon">
+            <svg viewBox="0 0 24 24"><polyline points="20 6 9 17 4 12"/></svg>
+          </div>
+          <div class="checklist-text">
+            <strong>Entre no grupo do WhatsApp agora</strong>
+            O link do Zoom será enviado por lá antes do workshop. Não deixe para depois.
+          </div>
+        </li>
+        <li>
+          <div class="checklist-icon">
+            <svg viewBox="0 0 24 24"><polyline points="20 6 9 17 4 12"/></svg>
+          </div>
+          <div class="checklist-text">
+            <strong>Marque na agenda: Sábado, 11 de abril</strong>
+            Bloqueie esse horário. Avise as pessoas ao seu redor que você estará indisponível.
+          </div>
+        </li>
+        <li>
+          <div class="checklist-icon">
+            <svg viewBox="0 0 24 24"><polyline points="20 6 9 17 4 12"/></svg>
+          </div>
+          <div class="checklist-text">
+            <strong>Escolha um lugar seguro e tranquilo</strong>
+            Um ambiente onde você possa se concentrar, sem interrupções e sem se sentir observada.
+          </div>
+        </li>
+        <li>
+          <div class="checklist-icon">
+            <svg viewBox="0 0 24 24"><polyline points="20 6 9 17 4 12"/></svg>
+          </div>
+          <div class="checklist-text">
+            <strong>Separe fones de ouvido</strong>
+            Para uma experiência imersiva e sem distrações externas.
+          </div>
+        </li>
+        <li>
+          <div class="checklist-icon">
+            <svg viewBox="0 0 24 24"><polyline points="20 6 9 17 4 12"/></svg>
+          </div>
+          <div class="checklist-text">
+            <strong>Tenha papel e caneta à mão</strong>
+            Você vai querer anotar. Muita coisa vai fazer sentido e você vai querer guardar.
+          </div>
+        </li>
+      </ul>
+    </div>
+  </section>
+
+  <!-- RODAPÉ -->
+  <footer class="footer">
+    <div class="footer-logo">Clube da Mulher Selvagem</div>
+    <p class="footer-text">Workshop Online · Sábado, 11 de abril · Ao vivo pelo Zoom</p>
+    <p class="footer-text" style="margin-top:8px;">© 2025 Pâmella Cavallini. Todos os direitos reservados.</p>
+  </footer>
+
+</body>
+</html>
